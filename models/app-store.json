@@ -6,6 +6,11 @@
             {
                 "name": "Dmitrijs",
                 "role": "Web developer"
+            },
+
+            {   
+                "name": "A.N. Other",
+                "role": "Web developer"
             }
         ],
         "location": "Waterford"

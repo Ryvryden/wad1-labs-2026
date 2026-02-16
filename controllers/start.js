@@ -11,9 +11,6 @@ const start = {
       title: "Welcome to the Playlist app!",
       info: appStore.getAppInfo()
     };
-    const info = appStore.getAppInfo();
-    logger.debug(info);
-    response.json(info);
     
     //logger.debug(viewData);
     response.render('start', viewData);   
@@ -21,3 +18,4 @@ const start = {
 };
 
 export default start;
+
