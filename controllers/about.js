@@ -1,17 +1,18 @@
 'use strict';
 import logger from "../utils/logger.js";
-import employe_1 from "../models/employe_1.js";
+import empStore from "../models/emp-store.js";
 
-const about ={
-    createView(request, response){
-        logger.info("About page loading!");
-
-        const viewData ={
-            title: "About the app"
-        };
-        response.render('about', viewData);
-        
-    },
+const about = {
+  createView(request, response) {
+    logger.info("About page loading!");
+   
+      const viewData = {
+      title: "Playlist App About",
+      emps: empStore.getEmpInfo()
+    };
+    logger.info(viewData.emps)
+    response.render('about', viewData); 
+  },
 };
 
 export default about;
